@@ -9,7 +9,7 @@
         <input
           [(ngModel)]="user.firstname"
           matInput
-          placeholder="Placeholder"
+          placeholder="Firstname"
           [disabled]="loading"
         />
         <mat-hint>Please enter your First name</mat-hint>
@@ -20,7 +20,7 @@
         <input
           [(ngModel)]="user.lastname"
           matInput
-          placeholder="Placeholder"
+          placeholder="Lastname"
           [disabled]="loading"
         />
         <mat-hint>Please enter your Last name</mat-hint>
@@ -33,7 +33,7 @@
         <input
           [(ngModel)]="birthDate"
           matInput
-          placeholder="Placeholder"
+          placeholder="Brithdate"
           [matDatepicker]="picker1"
           [disabled]="loading"
         />
@@ -48,22 +48,35 @@
 
     <div>
       <mat-form-field appearance="outline" class="full-width">
-        <mat-label>Adress</mat-label>
+        <mat-label>E-Mail</mat-label>
         <input
-          [(ngModel)]="user.adress"
+          [(ngModel)]="user.mail"
           matInput
-          placeholder="Placeholder"
+          placeholder="E-Mail"
           [disabled]="loading"
         />
       </mat-form-field>
     </div>
+
+    <div>
+      <mat-form-field appearance="outline" class="full-width">
+        <mat-label>Adress</mat-label>
+        <input
+          [(ngModel)]="user.adress"
+          matInput
+          placeholder="Adress"
+          [disabled]="loading"
+        />
+      </mat-form-field>
+    </div>
+    
     <div>
       <mat-form-field class="mr-16" appearance="outline">
         <mat-label>Zip code</mat-label>
         <input
           [(ngModel)]="user.zipCode"
           matInput
-          placeholder="Placeholder"
+          placeholder="Zip Code"
           [disabled]="loading"
         />
       </mat-form-field>
@@ -73,7 +86,7 @@
         <input
           [(ngModel)]="user.city"
           matInput
-          placeholder="Placeholder"
+          placeholder="City"
           [disabled]="loading"
         />
       </mat-form-field>
@@ -81,7 +94,7 @@
   </mat-dialog-content>
 
   <mat-dialog-actions>
-    <button mat-raised-button [mat-dialog-close]="">Cancel</button>
+    <button mat-raised-button (click)="this.dialogRef.close();">Cancel</button>
     <button
       mat-raised-button
       color="primary"

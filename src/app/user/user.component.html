@@ -6,15 +6,11 @@
         <th>E-Mail</th>
         <th>City</th>
       </tr>
-      <tr>
-        <td>Max</td>
-        <td>Mustermann</td>
-        <td>Peter</td>
-      </tr>
-      <tr>
-        <td>Max</td>
-        <td>Mustermann</td>
-        <td>Peter</td>
+      <tr *ngFor="let user of allUsers" (click)="navigateToUser(user['id'])">
+
+        <td>{{user['data']['firstname']}} {{user['data']['lastname']}}</td>
+        <td>{{user['data']['mail']}}</td>
+        <td>{{user['data']['city']}}</td>
       </tr>
     </table>
   </mat-card-content>

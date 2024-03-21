@@ -4,15 +4,17 @@ export class User{
     birthDate: number;
     adress: string;
     zipCode:number;
-    city: string
+    city: string;
+    mail: string
 
     constructor(obj?:any){
-        this.firstname = obj ? obj.firstname: ''; // ? steht für ein ternärer Operator der frägt ob obj existiert falls nicht wird dem :'' also leerer string zugewiesen
-        this.lastname = obj ? obj.lastname: '';
-        this.birthDate = obj ? obj.birthDate: '';
-        this.adress = obj ? obj.adress: '';
-        this.zipCode = obj ? obj.zipCode: '';
-        this.city = obj ? obj.city: '';
+        this.firstname = obj?.firstname || ''; // ? steht für ein ternärer Operator der frägt ob obj existiert falls nicht wird dem :'' also leerer string zugewiesen
+        this.lastname = obj?.lastname || '';
+        this.birthDate = obj?.birthDate || '';
+        this.adress = obj?.adress || '';
+        this.zipCode = obj?.zipCode || '';
+        this.city = obj?.city || '';
+        this.mail = obj?.mail || '';
     }
 
     toJSON() {
@@ -23,6 +25,7 @@ export class User{
             adress: this.adress,
             zipCode: this.zipCode,
             city: this.city,
+            mail: this.mail
         };
     }
 }
