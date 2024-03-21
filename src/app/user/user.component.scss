@@ -1,7 +1,54 @@
-.add-user-btn{
-    position: absolute;
-    right: 56px;
-    bottom: 56px;
-    height: 60px;
-    width: 60px;
+mat-card-content {
+  padding-left: 0;
+  padding-right: 0;
+}
+.mat-mdc-card-content:last-child{
+    padding-bottom: 0;
+}
+.add-user-btn {
+  position: absolute;
+  right: 56px;
+  bottom: 56px;
+  height: 60px;
+  width: 60px;
+}
+
+.user-table {
+  width: 100%;
+  border-collapse: collapse;
+  cursor: pointer;
+
+  tr {
+    border-bottom: 1px solid rgba($color: #000000, $alpha: 0.4);
+    &:first-child{
+        cursor: default;
+        &:hover{
+            background-color: unset;
+        }
+    }
+    &:last-child {
+      border-bottom: 0;
+    }
+    
+    td {
+      height: 46px;
+      &:first-child {
+        padding-left: 16px;
+      }
+    }
+
+    &:hover{
+        background-color: rgba($color: #000000, $alpha: 0.05);
+    }
+
+  }
+  th {
+    color: rgba($color: #000000, $alpha: 0.5);
+    font-size: 18px;
+    font-weight: 500;
+    text-align: start;
+    &:first-child {
+      padding-left: 16px;
+    }
+  }
 }

@@ -1,7 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { HeaderSidenavComponent } from './shared/header-sidenav/header-sidenav.component';
-
+import { Firestore } from '@angular/fire/firestore';
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -11,4 +11,5 @@ import { HeaderSidenavComponent } from './shared/header-sidenav/header-sidenav.c
 })
 export class AppComponent {
   title = 'simple-CRM';
+  firestore: Firestore = inject(Firestore);
 }

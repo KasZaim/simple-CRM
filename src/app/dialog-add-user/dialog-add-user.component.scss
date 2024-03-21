@@ -1,7 +1,18 @@
 .dialog-container{
     padding: 18px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
 }
-
-div{
-    margin-top: 16px;
+.p-0{
+    padding: 0;
+}
+mat-progress-bar{
+    position: absolute;
+    left:0;
+    top: 0;
+    right: 0;
+    margin-bottom: 12px;
 }
