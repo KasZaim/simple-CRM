@@ -30,7 +30,6 @@ export class UserComponent implements OnInit{
   firestore: Firestore = inject(Firestore);
   user: User = new User();
   usersCollectionRef = collection(this.firestore, 'users');
-  // unsubUserList: void;
   allUsers: DocumentData[]  = [];
 
   constructor(public dialog: MatDialog,private router: Router,) {

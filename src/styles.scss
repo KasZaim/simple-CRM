@@ -14,3 +14,15 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .mt-32{
     margin-top: 32px;
 }
+.dialog-container{
+    padding: 18px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.pl-0{
+    padding-left: 0 !important;
+}

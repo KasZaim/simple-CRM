@@ -2,7 +2,7 @@ export class User{
     firstname: string;
     lastname: string;
     birthDate: number;
-    adress: string;
+    address: string;
     zipCode:number;
     city: string;
     mail: string
@@ -11,7 +11,7 @@ export class User{
         this.firstname = obj?.firstname || ''; // ? steht für ein ternärer Operator der frägt ob obj existiert falls nicht wird dem :'' also leerer string zugewiesen
         this.lastname = obj?.lastname || '';
         this.birthDate = obj?.birthDate || '';
-        this.adress = obj?.adress || '';
+        this.address = obj?.address || '';
         this.zipCode = obj?.zipCode || '';
         this.city = obj?.city || '';
         this.mail = obj?.mail || '';
@@ -22,7 +22,7 @@ export class User{
             firstname: this.firstname,
             lastname: this.lastname,
             birthDate: this.birthDate,
-            adress: this.adress,
+            address: this.address,
             zipCode: this.zipCode,
             city: this.city,
             mail: this.mail
