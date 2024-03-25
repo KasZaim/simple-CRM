@@ -10,6 +10,4 @@ import { Firestore } from '@angular/fire/firestore';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'simple-CRM';
-  firestore: Firestore = inject(Firestore);
 }

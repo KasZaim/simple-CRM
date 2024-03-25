@@ -26,7 +26,7 @@ import { Firestore, doc, updateDoc } from '@angular/fire/firestore';
 
 
 export class DialogEditAddressComponent {
-  	user!: User; // '!'Dies teilt TypeScript mit, dass die user-Eigenschaft definitiv zugewiesen wird, bevor sie tatsächlich verwendet wird. Dies ist nützlich in Fällen wie Ihrem, wo die Eigenschaft nach der Erstellung der Komponenteninstanz, aber vor ihrer Verwendung, gesetzt wird.
+  	user: User = new User(); // '!'Dies teilt TypeScript mit, dass die user-Eigenschaft definitiv zugewiesen wird, bevor sie tatsächlich verwendet wird. Dies ist nützlich in Fällen wie Ihrem, wo die Eigenschaft nach der Erstellung der Komponenteninstanz, aber vor ihrer Verwendung, gesetzt wird.
     loading = false;
     userID?: string | null;
     firestore: Firestore = inject(Firestore);

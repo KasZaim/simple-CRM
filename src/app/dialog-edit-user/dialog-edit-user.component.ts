@@ -32,7 +32,7 @@ import { Firestore, collection, doc, updateDoc } from '@angular/fire/firestore';
   styleUrl: './dialog-edit-user.component.scss',
 })
 export class DialogEditUserComponent {
-  user!: User;
+  user: User = new User();
   userID?: string | null;
   loading = false;
   birthDate = new Date();
