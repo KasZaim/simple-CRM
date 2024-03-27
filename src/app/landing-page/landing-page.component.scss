@@ -1,0 +1,45 @@
+header{
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-bottom: 1px solid rgba($color: #5b5959, $alpha: 0.1);
+    background-color: #d7e3fe;
+    img{
+        height: 100px;
+    }
+    
+    >div{
+        display: flex;
+        width: 500px;
+        justify-content: space-between;
+        align-items: center;
+        
+        a{
+            text-decoration: none;
+            font-size: 22px;
+            color: #001b3f;
+            padding: 10px;
+            margin: 5px;
+            transition: all 225ms ease-in-out;
+            &:hover{
+                border-radius: 5px;
+                border: 1px solid whitesmoke;
+            }
+        }
+        a:nth-child(3) {
+            border: 1px solid whitesmoke; 
+        }
+    }
+}
+
+section{
+    background-image: url('../../assets/bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    background-position: 50%;
+}

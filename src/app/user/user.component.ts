@@ -41,7 +41,7 @@ export class UserComponent implements OnInit{
     
   }
   navigateToUser(userId: string): void {
-    this.router.navigate(['/user/', userId]);
+    this.router.navigate(['/app/user/', userId]);
   }
   subscribeToUsers(): void {
     onSnapshot(this.usersCollectionRef, (list) => {

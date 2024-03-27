@@ -3,12 +3,12 @@ import { DialogEditAddressComponent } from './dialog-edit-address.component';
 import { MatDialogModule, MatDialogRef } from '@angular/material/dialog';
 import { Firestore } from '@angular/fire/firestore';
 import { of } from 'rxjs';
-import { BrowserAnimationsModule, NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { provideAnimations } from '@angular/platform-browser/animations'
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import {MatMenuModule} from '@angular/material/menu';
+
 
 describe('DialogEditAddressComponent', () => {
   let component: DialogEditAddressComponent;
@@ -29,7 +29,6 @@ describe('DialogEditAddressComponent', () => {
       imports: [
         DialogEditAddressComponent, 
         MatDialogModule,
-  
         MatProgressBarModule,
         MatIconModule,
         MatButtonModule,MatMenuModule,MatProgressBarModule,
