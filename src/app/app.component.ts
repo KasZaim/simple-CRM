@@ -4,6 +4,7 @@ import { HeaderSidenavComponent } from './shared/header-sidenav/header-sidenav.c
 import { Firestore } from '@angular/fire/firestore';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import AOS from 'aos';
+import 'aos/dist/aos.css'; 
 
 @Component({
   selector: 'app-root',
@@ -14,7 +15,12 @@ import AOS from 'aos';
 })
 export class AppComponent {
   constructor(){
+    
+  }
+
+  ngOnInit(): void {
     AOS.init();
+    
   }
   
 }

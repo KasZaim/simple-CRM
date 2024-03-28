@@ -9,11 +9,12 @@ import { MatIconModule } from '@angular/material/icon';
   styleUrl: './about-the-app.component.scss'
 })
 export class AboutTheAppComponent {
-  ngOnInit(): void{
-    
-  }
+ 
   constructor(){
         
 
+  } 
+  ngOnInit(): void{
+    
   }
 }
